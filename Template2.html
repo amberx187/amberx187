@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>YourRealEstate</title>
+    <style>
+    body {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    height: 100px;
+    background: whitesmoke;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #050801;
+    position: fixed; /* Change to fixed */
+    padding: -10px; /* Adjust padding as needed */
+    width: 100%; /* Take the full width of the page */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav a {
+    margin-left: 20px;
+    color: #03e9f4;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 2px;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 900px;
+    margin: 100px auto 20px; /* Adjust top margin to create space for the fixed navbar */
+    padding: 20px;
+    color: #050801;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+
+        .details {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .price {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+    
+       
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    height: 100vh;
+    background:whitesmoke;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+a{
+    position: relative;
+    display: inline-block;
+    padding: 25px 30px;
+    margin: 40px 0;
+    color: #03e9f4;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    margin-right: 50px;
+
+}
+a:hover{
+    color: #03e9f4;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 200px #03e9f4;
+     -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+}
+a:nth-child(1){
+    filter: hue-rotate(270deg);
+}
+a:nth-child(2){
+    filter: hue-rotate(110deg);
+}
+a span{
+    position: absolute;
+    display: block;
+}
+a span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#03e9f4);
+    animation: animate1 1s linear infinite;
+}
+.facebook:hover{
+    background: #3b5998;
+}
+
+.instagram:hover{
+    background: #3f729b;
+}
+
+.twitter:hover{
+    background: #55acee;
+}
+.nav-icons {
+    
+    position: absolute;
+    top: 60%; 
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-icons a {
+    margin: 10px 0;
+    margin-right: 0; 
+}
+
+.gallery {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end; 
+            background-color: whitesmoke;
+            padding: 30px;
+            margin-top:400px ;
+            height: auto;
+        }
+
+        .gallery-image {
+            width: 110px; 
+            height: 110px;
+            margin-bottom: 10px;
+            margin-right: 400px;
+        }
+
+        .gallery-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .grey-box {
+          
+            width: 395px; 
+            height: 350px;
+            margin-left: 500px;
+            display: flex;
+            align-items: center;
+                
+        }
+
+        .grey-box img {
+            width: 395px;
+            height: 350px;
+            object-fit: cover;
+            margin-bottom: 780px;
+        }
+        .contact {
+            background-color: aqua;
+            color: black;
+            margin: 0 ;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        .contact-phone {
+            text-align: left;
+            margin-left: 2px; 
+        }
+
+        .contact-email {
+            text-align: right;
+            margin-right: 2px;
+            top: -10%;
+        }
+
+
+</style>
+</head>
+<body>
+    
+    <nav>
+        <a href="#">
+            <span></span><span></span>
+            <span></span><span></span>
+            Home
+        </a>
+        <a href="#">
+            <span></span><span></span>
+            <span></span><span></span>
+            Info
+        </a>
+        <a href="#">
+            <span></span><span></span>
+            <span></span><span></span>
+            Gallery
+        </a>
+        <a href="#">
+            <span></span><span></span>
+            <span></span><span></span>
+            Contact
+        </a>
+        <a href="#">
+            <span></span><span></span>
+            <span></span><span></span>
+            FAQ
+        </a>
+    </nav>
+    <header>
+    <div class="container">
+        <div class="nav-icons">
+        <a href="#">
+            <div class="section location" tooltip="Facebook" >
+                <div class="icon">
+                    
+                    <i class="fab fa-facebook-f fa-lg"></i>
+                </div>
+                <div class="text" style="font-size: 45%;">YourEstate@567.com</div> <!-- New div for text -->
+            </div>
+        </a>
+        
+        <a href="#">
+            <div class="section instagram" tooltip="instagram">
+                <div class="icon">
+                    <i class="fab fa-instagram fa-lg"></i>
+                </div>
+                <div class="text" style="font-size: 39%;">YourEstate@567</div> 
+            
+            </div>
+        </a>
+        <a href="#">
+            <div class="section twitter" tooltip="Twitter">
+                <div class="icon">
+                    <i class="fab fa-twitter fa-lg"></i>
+                </div>
+                <div class="text" style="font-size: 37%;">YourEstate@.com</div> 
+            </div>
+            </a>
+        </div>
+        </a>
+       
+    </div>
+    <div class="gallery">
+        <div class="gallery-image">
+            <img src="bedroom.jpg" alt="Image 1">
+        </div>
+        <div class="gallery-image">
+            <img src="living-room.jpg" alt="Image 2">
+        </div>
+        <div class="gallery-image">
+            <img src="kitchen.jpg" alt="Image 3">
+        </div>
+    </div>
+    <div class="grey-box">
+        <img src="family-house.jpg.png" alt="Grey Box Image">
+    </div>
+</div>
+  
+    <section class="contact">
+        <p class="contact-phone">Phone: (+92) 123 456 789</p>
+<p class="contact-email">Email: info@yourealestate.com</p>
+  </section>
+  </header>
+    
+</body>
+</html>

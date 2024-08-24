@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Real Estate Agency</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+
+        header {
+            background-color: whitesmoke;
+            font-family:'Times New Roman', Times, serif;
+            color:black;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .contact {
+            background-color: aqua;
+            color: black;
+            margin: 0 ;
+            text-decoration: none;
+            padding: 5px;
+        }
+
+        .contact-phone {
+            text-align: left;
+            margin-left: 2px; 
+        }
+
+        .contact-email {
+            text-align: right;
+            margin-right: 2px;
+            top: -10%;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: left;
+            flex-direction: column;
+            height: 100vh;
+            background: #050801;
+            font-family: 'Raleway', sans-serif;
+            font-weight: bold;
+        }
+
+        a {
+            position: relative;
+            display: inline-block;
+            padding: 10px 10px;
+            margin: 40px 0;
+            color: #03e9f4;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: 0.5s;
+            letter-spacing: 4px;
+            overflow: hidden;
+            margin-right: 50px;
+        }
+
+        a:hover {
+            background: #03e9f4;
+            color: #050801;
+            box-shadow: 0 0 5px #03e9f4,
+                        0 0 25px #03e9f4,
+                        0 0 50px #03e9f4,
+                        0 0 200px #03e9f4;
+            -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+        }
+
+        a:nth-child(1) {
+            filter: hue-rotate(270deg);
+        }
+
+        a:nth-child(2) {
+            filter: hue-rotate(110deg);
+        }
+
+        a span {
+            position: absolute;
+            display: block;
+        }
+
+        a span:nth-child(1) {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #03e9f4);
+            animation: animate1 1s linear infinite;
+        }
+
+        @keyframes animate1 {
+            0% {
+                left: -100%;
+            }
+            50%, 100% {
+                left: 100%;
+            }
+        }
+
+        a span:nth-child(2) {
+            top: -100%;
+            right: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(180deg, transparent, #03e9f4);
+            animation: animate2 1s linear infinite;
+            animation-delay: 0.25s;
+        }
+
+        @keyframes animate2 {
+            0% {
+                top: -100%;
+            }
+            50%, 100% {
+                top: 100%;
+            }
+        }
+
+        a span:nth-child(3) {
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(270deg, transparent, #03e9f4);
+            animation: animate3 1s linear infinite;
+            animation-delay: 0.50s;
+        }
+
+        @keyframes animate3 {
+            0% {
+                right: -100%;
+            }
+            50%, 100% {
+                right: 100%;
+            }
+        }
+
+        a span:nth-child(4) {
+            bottom: -100%;
+            left: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(360deg, transparent, #03e9f4);
+            animation: animate4 1s linear infinite;
+            animation-delay: 0.75s;
+        }
+
+        @keyframes animate4 {
+            0% {
+                bottom: -100%;
+            }
+            50%, 100% {
+                bottom: 100%;
+            }
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .gallery {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end; 
+            background-color: whitesmoke;
+            padding: 30px;
+            margin: 30px 0;
+            height: auto;
+        }
+
+        .gallery-image {
+            width: 110px; 
+            height: 110px;
+            margin-bottom: 10px;
+            margin-left: 200px;
+        }
+
+        .gallery-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .grey-box {
+            background-color: grey;
+            width: 395px; 
+            height: 350px;
+            margin-right: 100px;
+            display: flex;
+            align-items: center;
+        }
+
+        .grey-box img {
+            width: 395px;
+            height: 350px;
+            object-fit: cover;
+        }
+        .org
+        {
+            margin-left:100px;
+            font-size: 20px;
+            font-style: italic;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#">
+            <span></span><span></span>
+            <span></span><span></span>
+            Home
+        </a>
+        <a href="#">
+            <span></span><span></span>
+            <span></span><span></span>
+            Info
+        </a>
+        <a href="#">
+            <span></span><span></span>
+            <span></span><span></span>
+            Gallery
+        </a>
+        <a href="#">
+            <span></span><span></span>
+            <span></span><span></span>
+            Contact
+        </a>
+        <a href="#">
+            <span></span><span></span>
+            <span></span><span></span>
+            FAQ
+        </a>
+    </nav>
+  
+    <header>
+        <div class="header-content">
+            <div class="org">
+            <h1>Your Real Estate Agency</h1>
+            <h3>Special Offer</h3>
+            <h2>FAMILY</h2>
+            <h2>HOUSE </h2>
+            <h3>FOR RENT</h3>
+            </div>
+            <div class="gallery">
+                <div class="gallery-image">
+                    <img src="bedroom.jpg" alt="Image 1">
+                </div>
+                <div class="gallery-image">
+                    <img src="living-room.jpg" alt="Image 2">
+                </div>
+                <div class="gallery-image">
+                    <img src="kitchen.jpg" alt="Image 3">
+                </div>
+            </div>
+            <div class="grey-box">
+                <img src="family-house.jpg.png" alt="Grey Box Image">
+            </div>
+        </div>
+    </header>
+
+    <section class="contact">
+        <p class="contact-phone">Phone: (+92) 123 456 789</p>
+        <p class="contact-email">Email: info@yourealestate.com</p>
+    </section>
+</body>
+</html>
